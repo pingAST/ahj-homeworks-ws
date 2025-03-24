@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чат</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div id="authOverlay">
+  <div class="auth-card">
+    <h2>Выберите псевдоним</h2>
+    <div class="input-group">
+      <input type="text" id="nicknameInput" placeholder="Введите псевдоним">
+      <button id="authButton" class="btn-primary">Продолжить</button>
+    </div>
+    <div id="authError" class="error-message"></div>
+  </div>
+</div>
+
+<div class="chat-container">
+  <div class="chat-sidebar">
+    <div class="sidebar-header">
+      <h3>Пользователи в чате</h3>
+      <button id="logoutButton" class="btn-icon" title="Выйти">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
+    </div>
+    <ul id="userList" class="user-list"></ul>
+  </div>
+
+  <div class="chat-main">
+    <div class="chat-messages" id="chatArea"></div>
+    <div class="chat-input">
+      <textarea id="messageInput" placeholder="Напишите ваше сообщение..." rows="1" enterkeyhint="send"></textarea>
+      <button id="sendButton" class="btn-primary">Отправить <i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<div id="confirmModal" class="confirm-modal">
+  <div class="confirm-content">
+    <p>Вы уверены, что хотите покинуть чат?</p>
+    <div class="confirm-buttons">
+      <button id="confirmLeave" class="btn-primary danger">Покинуть чат</button>
+      <button id="confirmCancel" class="btn-primary">Отмена</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
