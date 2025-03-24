@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: "production",
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.WS_URL': JSON.stringify("wss://url-render")
+      'process.env.WS_URL': JSON.stringify("wss://ahj-homeworks-ws.onrender.com")
     })
   ],
   optimization: {

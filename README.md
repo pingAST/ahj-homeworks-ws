@@ -5,3 +5,5 @@
 [Cсылка на Github Pages](https://pingast.github.io/ahj-homeworks-ws/)
 
 
+[![Build status](https://ci.appveyor.com/api/projects/status/3d6wnuc0w77r9vch?svg=true)](https://ci.appveyor.com/project/pingAST/ahj-homeworks-ws)
+
